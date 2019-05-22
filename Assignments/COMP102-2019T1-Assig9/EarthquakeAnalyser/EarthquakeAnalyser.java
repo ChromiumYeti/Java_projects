@@ -77,13 +77,13 @@ public class EarthquakeAnalyser{
     public void loadData(){
         String filename = UIFileChooser.open("Data File");
         earthquakes.clear();
-        int i=0;
+        //int i=0;
 
-        ArrayList<String> earthquakes = this.readAllLines(filename);
+        ArrayList<String> lines = this.readAllLines(filename);
 
-        for ( String quake :earthquakes){
+        for ( String line :lines){
             //i++;
-            Scanner lineSc = new Scanner(quake);
+            Scanner lineSc = new Scanner(line);
             String ID = (String) lineSc.next();
             //int year = (int) lineSc.nextInt();
             //int month = (int) lineSc.nextInt();
@@ -94,11 +94,13 @@ public class EarthquakeAnalyser{
             double magnitude = (double) lineSc.nextDouble();
             double depth = (double) lineSc.nextDouble();
             String region = (String) lineSc.next();
-            //this.Earthquake.Earthquake(ID,time,longitude,latitude,magnitude,depth,region);
+            Earthquake quakes = new Earthquake(ID, time, longitude,latitude,magnitude,depth,region);
+            this.earthquakes.add(quakes);
+            
             //UI.printf("ID: %s\tTime: %s\tLong: %.2f\tLat: %.2f\tMag: %.2f\tDepth: %.2f\tRegion: %s\n",ID,time,longitude,latitude,magnitude,depth,region); 
         }
 
-        UI.printf("Loaded %d earthquakes into list\n", earthquakes.size());
+        UI.printf("Loaded %d earthquakes into list\n", this.earthquakes.size());
         UI.println("----------------------------");
     }
 
@@ -113,7 +115,6 @@ public class EarthquakeAnalyser{
             Scanner scan = new Scanner(new File(fname));
             while (scan.hasNext()){
                 lines.add(scan.nextLine());
-
             }
             //UI.printf("%s\n", lines);
             scan.close();
@@ -128,19 +129,29 @@ public class EarthquakeAnalyser{
      */
     public void findBigOnes(){
         UI.println("Earthquakes 5.5 and above");
-        /*# YOUR CODE HERE */
-
+        for(Earthquake earthquakes: this.earthquakes){
+            if (earthquakes.getMagnitude() >= 5.5){
+                UI.println(earthquakes.toString());
+            }
+        }
         UI.println("------------------------");
     }
 
     /**
-     * Print all pairs of earthquakes within 1km of each other and within 1km depth from each other
+     * Print all pairs of earthquakes and within 1km depth from earthquakes within 1km of each other
      * and separated by at least 1 day;
      */
     public void findPairs(){
         UI.println("Close earthquakes");
-        /*# YOUR CODE HERE */
-
+        double pairs = 0;
+        for (int i=0; i < this.earthquakes.size(); i++) {
+            for (int j=1; j < this.earthquakes.size(); j++) {
+                if(this.earthquake.get(i).distanceTo(j) <=1.0
+                && this.earthquake.get(i).getDepth(i)){
+                    
+                }
+            }
+        }
         UI.println("----------------------------");
     }
 

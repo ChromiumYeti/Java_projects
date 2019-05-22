@@ -12,7 +12,7 @@ comment3.target=void\ findBigOnes()
 comment3.text=\n\ Print\ details\ of\ all\ earthquakes\ with\ a\ magnitude\ of\ 5.5\ or\ more\n
 comment4.params=
 comment4.target=void\ findPairs()
-comment4.text=\n\ Print\ all\ pairs\ of\ earthquakes\ within\ 1km\ of\ each\ other\ and\ within\ 1km\ depth\ from\ each\ other\n\ and\ separated\ by\ at\ least\ 1\ day;\n
+comment4.text=\n\ Print\ all\ pairs\ of\ earther\ and\ within\ 1km\ depth\ from\ eacthquakes\ within\ 1km\ of\ each\ oh\ other\n\ and\ separated\ by\ at\ least\ 1\ day;\n
 comment5.params=
 comment5.target=void\ findFollowOns()
 comment5.text=\n\ CHALLENGE\ 1\n\ Constructs\ a\ new\ ArrayList\ containing\ every\ earthquake\ with\ a\ magnitude\ that\ is\ at\ least\ 6\ \n\ For\ each\ earthquake\ on\ this\ list\n\ -\ finds\ a\ list\ of\ all\ the\ "follow-on"\ earthquakes\:\n\ \ \ later\ earthquakes\ within\ a\ distance\ of\ 10km\ and\ depth\ difference\ <\=\ 10km.\n\ -\ If\ there\ are\ at\ least\ two\ follow-on\ earthquakes,\ then\ it\ prints\ out\n\ \ \ \ \ the\ full\ details\ of\ the\ big\ earthquake\ followed\ by\n\ \ \ \ ID,\ magnitude\ and\ days\ since\ the\ big\ one\ for\ each\ follow-on\ earthquake\n
