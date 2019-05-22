@@ -1,0 +1,19 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 8
+ * Name:
+ * Username:
+ * ID:
+ */
+
+Questions for Reflection: 
+=========================
+
+1. List which methods of the WaveformAnalyser you completed.
+
+2. When working with ArrayLists, many errors occur at the boundaries of the
+list. Discuss some of the errors you had to deal with in your code. Did the
+errors involve the ends of the list?
+
+3. The program used one pixel width of the window for each value in the
+waveform. If the waveform were from a real WAV file, it would have much more
+data than would fit on the window. How might you change the program to deal
+with that?

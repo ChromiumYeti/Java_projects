@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Coord
+comment0.text=\ Coord\ Class\n\ Author\:\ \ pondy\n\ Description\:\ Provides\ row-column\ pairs\ for\ specifying\ cells\ of\ a\ maze\n
+comment1.params=r\ c
+comment1.target=Coord(int,\ int)
+comment2.params=d
+comment2.target=Coord\ next(Direction)
+numComments=3

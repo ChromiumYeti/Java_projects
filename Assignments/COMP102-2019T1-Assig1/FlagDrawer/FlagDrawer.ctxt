@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=FlagDrawer
+comment0.text=\n\ Draws\ various\ flags\n\n\ You\ can\ find\ lots\ of\ flag\ details\ (including\ the\ correct\ dimensions\ and\ colours)\n\ from\ \ http\://www.crwflags.com/fotw/flags/\ \ \ \ \n
+comment1.params=
+comment1.target=void\ drawBelgiumFlag()
+comment1.text=\ \ \ CORE\n\ Draw\ the\ flag\ of\ Belgium.\n\ The\ flag\ has\ three\ vertical\ stripes;\n\ The\ left\ is\ black,\ the\ middle\ is\ yellow,\ and\ the\ right\ is\ red.\n\ The\ flag\ is\ 13/15\ as\ high\ as\ it\ is\ wide\ (ratio\ 13\:15).\n
+comment2.params=
+comment2.target=void\ drawSwissFlag()
+comment2.text=\ CORE\n\ \ The\ Swiss\ flag\ consists\ of\ a\ red\ square\ with\ a\ white\ cross\ in\ the\ center\n\ \ The\ cross\ can\ be\ drawn\ as\ a\ horizontal\ rectangle\ and\ a\ vertical\ rectangle.\n
+comment3.params=
+comment3.target=void\ drawPalmyraFlag()
+comment3.text=\ COMPLETION\n\ \ The\ unofficial\ flag\ of\ Palmyra\ Atoll\ has\ three\ horizontal\ stripes\ with\ part\ of\ a\ yellow\ circle.\n\ \ The\ flag\ is\ 2/3\ as\ high\ as\ it\ is\ wide\ (ratio\ 2\:3).\n\ \ The\ top\ stripe\ is\ red\ and\ is\ 10/20\ of\ the\ height\ of\ the\ flag.\n\ \ The\ middle\ stripe\ is\ blue\ and\ is\ 7/20\ of\ the\ height\ of\ the\ flag.\n\ \ The\ bottom\ stripe\ is\ yellow\ and\ is\ 3/20\ of\ the\ height\ of\ the\ flag.\n\ \ The\ diameter\ of\ the\ yellow\ circle\ is\ 1/2\ of\ the\ width\ of\ the\ flag,\ \n\ \ \ \ \ \ and\ its\ top\ is\ slightly\ below\ the\ top\ of\ the\ flag.\n\ \ HINT\:\ think\ in\ which\ order\ to\ paint\ the\ different\ parts\ of\ the\ flag.\n
+comment4.params=
+comment4.target=void\ drawPacman()
+comment4.text=\ COMPLETION\n\ Pacman\ flag\n\ A\ yellow\ pacman\ on\ a\ black\ background\ chasing\ white,\ red,\ and\ green\ dots\ to\ the\ right.\n
+comment5.params=
+comment5.target=void\ drawSeychellesFlag()
+comment5.text=\ CHALLENGE\n\ \ The\ flag\ of\ the\ Seychelles\n\ \ Width\ \=\ 2\ x\ height\n\ \ Radiating\ triangles.\n
+comment6.params=
+comment6.target=void\ drawChinaFlag()
+comment6.text=\ \ \ CHALLENGE\n\ Draw\ the\ flag\ of\ China,\n\ Width\ \=\ 2/3\ height,\n\ Red\ background\ with\ larger\ star\ in\ corner\ with\ four\ gold\ stars\ around\ it\n\ The\ little\ stars\ all\ point\ towards\ the\ larger\ star.\n\ A\ full\ marks\ solution\ will\ have\ a\ method\ for\ drawing\ a\ 5\ pointed\ star,\n\ and\ call\ that\ method\ for\ each\ of\ the\ stars\n
+numComments=7

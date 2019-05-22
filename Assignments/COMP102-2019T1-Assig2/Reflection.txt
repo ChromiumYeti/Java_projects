@@ -1,0 +1,26 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 2
+ * Name: Christopher Yee
+ * Username: yeechri2
+ * ID: 300508277
+ */
+
+Questions for Reflection: 
+=========================
+
+1. What is one thing that you did in this assignment that is similar to the
+previous assignment? Was it easier this time? How did you approach doing it?
+
+    One thing similar to the previous assignment was working with variables to help store and manage changing values.
+
+2. Why did the dance method have to have a parameter (the CartoonCharacter face
+parameter)?
+
+    The 'face' parameter allowed the object names to be called up to use the dance method by putting the character info into the parameter.
+
+3. When using several "if" statements, you can use a sequence of separate "if"
+statements or you can combine them into a longer "if... else if .... else if ...."
+statement. What's the difference? Is one better than the other?
+
+    The main difference between the two is that if statements can have an action tied to the condition, but no need to have any actions for an alternate. If it is required for your conditions to have alternate options where the conditions are directly related to each other, then if, else if, and else statements apply.
+
+    Written fully (if..else if...else) can be better than the more simplified version even if there aren't any actions, as one may run into problems later on with data that may not match what you want and may run into computational errors, and so additional specifics may be required.

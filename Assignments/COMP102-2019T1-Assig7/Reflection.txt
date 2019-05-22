@@ -1,0 +1,31 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 7
+ * Name: Christopher Yee
+ * Username: yeechri2
+ * ID: 300508277
+ */
+
+Questions for Reflection: 
+=========================
+
+0. List which methods of the BalloonGame you completed. (This will help the marker!)
+
+restartGame()
+doMouse()
+findBalloonOn()
+findTouching()
+calculateScore()
+main()
+
+Other helper methods I used
+redisplay()
+balloonCount()
+
+1. Why do you need fields in the MiniPaint program? Explain why couldn't you use local variables in the methods.
+
+Fields were helpful in this case as there was information needed and called on by multiple methods and required the data to be stored relatively long term.
+
+2. What were the design problems you had when working on MiniPaint and BalloonGame? What bits were hard to get right?
+
+I didn't come across too many problems in the MiniPaint program aside from trying getting ArrayList conversion to Array for the Polygon, and a frustration on creating shapes from any direction was primarily a result of a misplaced 'else if' instead of an 'if' statement. The ArrayList conversion I had issues with not being able to set up the right type of array output for it and could not get it working in time.
+
+With the BalloonGame, I had odd issues with calculating the score correctly as it would only select one balloon (presumably the first) and only account increases from that and no other balloon. Since I was not able to get this working correctly, I unfortunately could not test the other methods that relied on that data.

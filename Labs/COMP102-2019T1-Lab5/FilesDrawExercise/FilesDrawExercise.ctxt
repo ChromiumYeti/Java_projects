@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=FilesDrawExercise
+comment0.text=\n\ Exercises\ for\ programs\ that\ read\ data\ from\ files.\n
+comment1.params=
+comment1.target=void\ drawCircles()
+comment1.text=\n\ Reads\ a\ file\ called\ "circle-positions.txt"\n\ The\ first\ line\ of\ the\ file\ has\ the\ number\ of\ circles\ to\ draw\n\ Each\ later\ line\ contains\ two\ numbers\ -\ the\ x\ and\ y\ positions\ of\ a\ circle\n\ The\ method\ should\ read\ the\ first\ number,\ \ \n\ \ then\ read\ all\ the\ lines\ for\ the\ circles\ (use\ readSomeLines(...)\n\ \ then\ loop\ through\ all\ the\ line,\ pulling\ out\ the\ x\ and\ y\ of\ each\ position,\n\ \ \ setting\ a\ colour,\ and\ then\ drawing\ a\ circle\ (size\ 20)\ at\ the\ position.\n\ eg,\ if\ a\ line\ of\ the\ file\ has\ 120\ 350\ on\ it,\ then\n\ \ it\ draws\ a\ circle\ centered\ at\ (120,\ 350).\n\ You\ can\ make\ them\ all\ the\ same\ colour\ or\ random\ colours\n
+comment2.params=scan\ count
+comment2.target=java.util.ArrayList\ readSomeLines(java.util.Scanner,\ int)
+comment2.text=\n\ Reads\ count\ lines\ from\ the\ Scanner\ and\ returns\ a\ list\ of\ the\ lines\n
+comment3.params=
+comment3.target=void\ drawNames()
+comment3.text=\n\ Read\ a\ file\ called\ "names.txt"\ containing\ \ of\ names\ and\ positions,\n\ and\ draw\ them\ on\ the\ graphics\ pane.\n\ The\ first\ line\ of\ the\ file\ has\ the\ number\ of\ names\ in\ the\ file\n\ Each\ remaining\ line\ of\ the\ file\ has\ two\ numbers\ (x\ and\ y)\ and\ a\ name,\n\ followed\ by\ three\ integers\ specifying\ the\ color\ to\ draw\ the\ name.\n\ For\ each\ line,\ it\ sets\ the\ color,\ then\ draws\ the\ name\ at\ the\ position.\n\ If\ the\ three\ colour\ integers\ are\ in\ r,\ g,\ and\ b,\ then\ you\ can\ set\ the\ colour\n\ using\ \ UI.setColor(new\ Color(r,\ g,\ b)));\n
+numComments=4

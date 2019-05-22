@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Balloon
+comment0.text=\ Describes\ Balloon\ objects\ that\ can\ be\ blown\ up\ until\ they\ pop.\n\ \ \ \ Designed\ for\ the\ Balloon\ game\ (assignment\ later\ in\ course)\n\ \ \ \ You\ can\ make\ a\ new\ balloon\ (specify\ the\ position)\n\ \ \ \ expand()\ will\ make\ the\ balloon\ a\ little\ bigger\ and\ then\ pause\ briefly.\n\ \ \ \ pop()\ \ \ \ will\ pop\ the\ balloon,\ turning\ it\ grey\ for\ a\ short\ time,\ then\ making\ it\ disappear\n\ \ \ \ \ \ \ \ \ \ \ \ \ after\ you\ have\ popped\n
+comment1.params=x\ y
+comment1.target=Balloon(double,\ double)
+comment1.text=\ Construct\ a\ new\ Balloon\ object;\ parameters\ specify\ the\ center\ of\ the\ balloon\n\tDraws\ the\ balloon\ on\ the\ screen,\ and\ pauses\ briefly.\n
+comment2.params=
+comment2.target=void\ expand()
+comment2.text=\ Make\ the\ balloon\ larger\ by\ a\ random\ amount\ between\ 10\ and\ 20\ units\n\tIt\ pauses\ for\ a\ short\ time\ after\ expanding\ it.\n
+comment3.params=
+comment3.target=void\ pop()
+comment3.text=\ Pops\ the\ balloon\:\ draws\ it\ in\ gray,\ pauses,\ then\ makes\ it\ disappear.\n\ \ The\ balloon\ cannot\ be\ expanded\ or\ re-popped\ after\ the\ first\ time\ it\ has\ popped.\n
+comment4.params=
+comment4.target=void\ draw()
+comment4.text=draw\ the\ balloon\ on\ the\ screen\ and\ pause\ briefly.
+comment5.params=
+comment5.target=java.awt.Color\ randomBrightColor()
+comment5.text=\ Construct\ a\ bright\ colour\:\n
+numComments=6

@@ -1,0 +1,13 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 6
+ * Name:
+ * Username:
+ * ID:
+ */
+
+Questions for reflection.
+=========================
+
+1. Did your Ball move realistically in parabolic arcs?
+
+2. What is the advantage of having a Ball class? Couldn't the code all be part of the BallGame class?
+

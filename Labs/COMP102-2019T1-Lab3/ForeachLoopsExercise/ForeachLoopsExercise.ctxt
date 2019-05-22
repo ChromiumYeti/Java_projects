@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ForeachLoopsExercise
+comment0.text=\ ForeachLoopsExercise\ is\ a\ collection\ of\ small\ methods\ with\ foreach\ loops\n
+comment1.params=
+comment1.target=void\ squareNumbers()
+comment1.text=\ Ask\ the\ user\ to\ enter\ a\ sequence\ of\ numbers\n\ then\ print\ out\ the\ square\ of\ each\ number.\n\ \ \ \ \ For\ example,\ if\ they\ enter\ 4\ 21\ 20\ 9\ 12\ done\n\ \ \ \ \ it\ should\ print\ \ 16\ 441\ 400\ 81\ 144\ (either\ on\ one\ line\ or\ on\ separate\ lines)\n
+comment2.params=
+comment2.target=void\ addBigNumbers()
+comment2.text=\ Read\ a\ sequence\ of\ numbers,\ using\ UI.askNumbers(),\n\ then\ print\ the\ sum\ of\ all\ the\ numbers\ bigger\ than\ 9.\n\ \ \ \ For\ example,\ if\ they\ enter\ 4\ 21\ 20\ 9\ 12\ done\n\ \ \ \ it\ should\ print\ \ \ 53\n\ \ \ \ (21+20+12\=53)\n
+comment3.params=
+comment3.target=void\ printTHWords()
+comment3.text=\ Read\ a\ sequence\ of\ words,\ and\ print\ out\ all\ the\ words\ containing\ "th".\n\ \ \ \ For\ example,\ if\ they\ enter\:\ Mathilde\ is\ the\ happiest\ person\ other\ than\ Matthew"\n\ \ \ \ it\ should\ print\ "Mathilde\ the\ other\ than\ Matthew"\n
+comment4.params=
+comment4.target=void\ drawDots()
+comment4.text=\ Read\ a\ sequence\ of\ x\ coordinates\ then\ draw\ dots\ (10\ pixels\ diameter)\ at\ each\ x\ coordinate\n\ as\ long\ as\ it\ is\ between\ 0\ and\ 300.\ The\ y\ value\ should\ be\ 50.\n
+numComments=5

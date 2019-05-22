@@ -1,0 +1,18 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 9
+ * Name:
+ * Username:
+ * ID:
+ */
+
+Questions for Reflection: 
+=========================
+
+
+1. Explain why "off-by-one" errors are so easy to make when programming with
+arrays.
+
+2. Both DominoGame and EarthquakeAnalyser used another class that was written
+for you. This saved you writing some code, but also constrained you to write
+the program in a particular way. Discuss advantages and disadvantages you found
+when having a predefined class that you had to use as part of your program.
+

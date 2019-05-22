@@ -1,0 +1,19 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 4
+ * Name: Christopher Yee
+ * Username: yeechri2
+ * ID: 300508277
+ */
+
+Questions for Reflection: 
+=========================
+
+1. When you are reading data from a file, how should you choose the way to read
+it, using readAllNumbers, readAllTokens, or readAllLines?
+
+Depending on what you're handling, all are valid. Keeping them in lines maintains the relational integrity with each piece of data, which can be separated if needed through processing.
+
+2. The WordSearcher program was not very efficient. Why not? (What did it do
+multiple times that it could have done just once?) What would we need to do to
+make it more efficient? (We haven't covered this in the lectures yet!!!)
+
+The program searched through the list and printed a matching word over and over, cutting it off if the result was over 100. It could possibly take all the results and put them into another List to be printed off once.

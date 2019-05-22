@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Car
+comment0.text=\ Describes\ Car\ objects\ that\ can\ be\ moved\ and\ turned\ to\ left\ or\ right.\n\ \ \ \ Designed\ for\ a\ simulation\ of\ roads\ and\ traffic\ lights.\n\ \ \ \ You\ can\ make\ a\ new\ car\ (specify\ the\ (x,y)\ position,\ and\ its\ colour)\n\ \ \ \ drive(double\ dist)\ makes\ it\ move\ it\ forward\ by\ some\ distance,\n\ \ \ \ left()\ and\ right()\ make\ it\ turn\ it\ left\ or\ right.\n
+comment1.params=x\ y\ col
+comment1.target=Car(double,\ double,\ java.awt.Color)
+comment1.text=\ Construct\ a\ new\ Car\ object;\ parameters\ are\ the\ position\ and\ colour\ of\ the\ car.\n
+comment2.params=dist
+comment2.target=void\ drive(double)
+comment2.text=Make\ the\ car\ move\ a\ distance\ in\ its\ current\ direction
+comment3.params=
+comment3.target=void\ left()
+comment3.text=turn\ the\ car\ 90\ degrees\ to\ the\ left
+comment4.params=
+comment4.target=void\ right()
+comment4.text=turn\ the\ car\ 90\ degrees\ to\ the\ right
+comment5.params=
+comment5.target=void\ draw()
+comment5.text=\ draw\ the\ car\:\ a\ rectangle\ with\ a\ darker\ rectangle\ for\ the\ roof,\ slightly\ offset\ntowards\ the\ back\ of\ the\ car
+comment6.params=
+comment6.target=void\ erase()
+comment6.text=erase\ the\ car
+numComments=7

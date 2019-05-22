@@ -1,0 +1,18 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 5
+ * Name:
+ * Username:
+ * ID:
+ */
+
+Questions for Reflection: 
+=========================
+
+1. Describe some of the errors that you made while working on this assignment. 
+Were any of them difficult to debug?
+
+2. If an image was standard SVGA size (800x600), how big would a ppm file of the
+image be, given that each character in the file (including the spaces) requires
+1 byte? How much worse is this than a typical jpg or png file of the same
+number of pixels? (you may need to go and find some typical images that are
+about 800x600 pixels).
+

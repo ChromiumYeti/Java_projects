@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ImageExercise
+comment0.text=\ ImageExercise\n\ \ Draw\ Images\ made\ of\ constructed\ colours.\n
+comment1.params=num
+comment1.target=void\ drawGridBoard(int)
+comment1.text=\n\ Draw\ a\ square\ grid\ board\ with\ white\ squares.\n\ Position\ of\ the\ grid\ given\ by\ LEFT\ and\ TOP\n\ num\ is\ the\ number\ of\ rows\ and\ columns\ of\ squares\ \n
+comment2.params=rows\ cols
+comment2.target=void\ drawRandomImage(int,\ int)
+comment2.text=\ \n\ Draw\ an\ image\ made\ of\ squares\ of\ random\ colours\n\ rows\ and\ cols\ specify\ the\ number\ of\ rows\ and\ colums\ of\ squares\n\ The\ individual\ squares\ are\ 10x10\ units\n\ Position\ of\ the\ grid\ given\ by\ LEFT\ and\ TOP\n
+comment3.params=rows\ cols
+comment3.target=void\ drawGradient(int,\ int)
+comment3.text=\n\ Draw\ an\ image\ made\ of\ coloured\ squares\ that\ is\ a\ smooth\n\ \ gradient\ from\ red\ at\ the\ top\ to\ green\ at\ the\ bottom.\n\ Each\ square\ should\ be\ 2x2\ units.\n
+numComments=4

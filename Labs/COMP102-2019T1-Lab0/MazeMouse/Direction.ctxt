@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Direction
+comment0.text=\ Direction\ Class\n\ Author\:\ \ pondy\n\ Description\:\ Provides\ four\ distinct\ directions,\ and\ methods\ to\ obtain\n\ the\ direction\ left,\ right,\ and\ opposite\ a\ given\ direction.\n
+comment1.params=
+comment1.target=Direction\ left()
+comment2.params=
+comment2.target=Direction\ right()
+comment3.params=
+comment3.target=Direction\ opposite()
+numComments=4

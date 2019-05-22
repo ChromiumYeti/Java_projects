@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Cell
+comment0.text=\ Cell\ Class\n\ Author\:\ \ pondy\n\ Description\:\ Provides\ the\ kinds\ of\ cells\ for\ a\ maze.\n\ currently,\ just\ spaces\ and\ walls.\n
+comment1.params=
+comment1.target=Cell()
+comment2.params=
+comment2.target=Cell\ invert()
+numComments=3

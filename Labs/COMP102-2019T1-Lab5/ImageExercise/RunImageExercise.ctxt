@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=RunImageExercise
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Sets\ up\ an\ interface.\n\ The\ actions\ on\ the\ buttons\ ask\ for\ the\ size\ of\ the\ grid\ and\ then\ call\ the\n\ method\ to\ draw\ the\ grid.\n
+numComments=2

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Firework
+comment0.text=Firework
+comment1.params=x\ c\ h
+comment1.target=Firework(double,\ java.awt.Color,\ double)
+comment2.params=
+comment2.target=void\ step()
+comment2.text=\n\ Make\ the\ firework\ move\ one\ step\:\n\ \ If\ below\ maxHeight,\ move\ it\ up\ by\ STEP_SIZE\n\ \ If\ at\ maxHeight\ and\ not\ finished,\ make\ the\ radius\ bigger\ by\ GROW_SIZE,\ \n
+comment3.params=
+comment3.target=boolean\ isFinished()
+comment3.text=\n\ Finished\ if\ the\ radius\ is\ at\ least\ half\ of\ maxHeight\n
+comment4.params=
+comment4.target=void\ draw()
+comment4.text=\n\ Draw\ the\ firework\ as\ a\ circle\ of\ the\ current\ size,\ unless\ it\ is\ finished\n
+numComments=5

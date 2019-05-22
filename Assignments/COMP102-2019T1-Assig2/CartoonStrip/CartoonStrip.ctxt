@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CartoonStrip
+comment0.text=\ Program\ to\ create\ simple\ animated\ cartoon\ strips\ using\ the\n\ \ CartoonCharacter\ class.\ \ \n
+comment1.params=
+comment1.target=void\ tellStory()
+comment1.text=\ tellStory\ creates\ two\ cartoon\ characters\ on\ the\ window.\n\ \ Then\ animates\ them\ according\ to\ a\ fixed\ script\ by\ calling\ a\ series\n\ \ of\ methods\ on\ the\ characters.\n
+comment2.params=
+comment2.target=void\ threeDancers()
+comment2.text=\ threeDancers\ creates\ three\ cartoon\ characters\ on\ the\ window.\n\ \ Then\ makes\ each\ character\ do\ the\ same\ little\ dance\ in\ turn,\n\ \ by\ calling\ the\ dance\ method.\n
+comment3.params=face
+comment3.target=void\ dance(CartoonCharacter)
+comment3.text=\ Makes\ a\ character\ do\ a\ little\ dance.\n\ Has\ one\ parameter\ -\ a\ CartoonCharacter\ object\n
+numComments=4

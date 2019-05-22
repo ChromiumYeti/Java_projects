@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MazeMouse
+comment0.text=\ Program\ MazeMouse\ for\ COMP102\ \ \n\ Author\:\ \ pondy\ \ <P>\n\ Original\ Date\:\ Jan\ 26,\ 1998\ \ <P>\n\ Revision\:\ Feb\ 2006,\ Feb\ 2011,\ Feb\ 2014<P>\n\ Description\:\ Simulates\ a\ robot\ mouse\ in\ a\ maze.\ \ <P>\n\ The\ mouse\ can\ move\ forward\ (one\ step),\ turn\ left,\ or\ turn\ right\ \ <P>\n\ It\ can\ sense\ the\ cell\ in\ front\ of\ it\ and\ the\ cell\ on\ each\ side\ \ <P>\n\ The\ user\ can\ specify\ the\ behaviour\ of\ the\ mouse\ by\ listing\ sequences\n\ of\ actions\ to\ respond\ to\ each\ of\ five\ events\:\ \ <P>\n\ Space-ahead,\ space-to-left,\ space-to-right\ space-both-sides\ dead-end\ \ <P>\n\ The\ actions\ are\ specified\ by\ a\ string\ of\ M,\ L,\ R,\ and\ ?\ \ <BR>\n\ M\ is\ for\ "move\ forward"\ \ <BR>\n\ L\ is\ for\ "turn\ left"\ \ \ \ \ <BR>\n\ R\ is\ for\ "turn\ right"\ \ \ \ <BR>\n\ ?\ is\ for\ do\ a\ random\ choice\ of\ one\ of\ the\ other\ three\ actions\ \ <BR>\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=MazeMouse()
+comment3.params=action\ x\ y
+comment3.target=void\ doMouse(java.lang.String,\ double,\ double)
+numComments=4

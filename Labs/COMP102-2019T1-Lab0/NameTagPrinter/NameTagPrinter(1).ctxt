@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=NameTagPrinter
+comment0.text=A\ very\ simple\ program\ that\ prints\ out\ a\ name\ tag\ in\ two\ different\ ways
+comment1.params=
+comment1.target=void\ printNameTag()
+comment1.text=\n\ Ask\ for\ name\ and\ then\ print\ a\ nametag\ with\n\ the\ name\ inside\ a\ box\ made\ of\ asterisks\n
+comment2.params=
+comment2.target=void\ drawNameTag()
+comment2.text=\n\ Ask\ for\ name\ and\ then\ draw\ a\ nametag\ on\ the\ graphics\ pane\n\ \ The\ rectangular\ nametag\ is\ 300\ units\ wide\ and\ 150\ units\ high\n\ \ and\ its\ left\ edge\ is\ 100\ units\ over\ and\ its\ top\ is\ 70\ units\ down\n
+numComments=3

@@ -1,0 +1,29 @@
+/* Reflection.txt for COMP102 - 2019T1
+ * Name:
+ * Username:
+ * ID:
+ */
+
+Questions for Reflection: 
+=========================
+
+The NameTagPrinter program is pretty simple, but it still contains quite a lot of
+different kinds of instructions. Even though we haven't covered them all in
+lectures yet, you should still be able to make educated guesses about what they
+mean.
+
+1. Can you identify two different kinds of instructions in the code?
+
+2. The "text version" of the name tag probably didn't work very well when you
+changed the name.  Why? What could you do about it?
+
+
+The MazeMouse puzzle is trickier than it first looks, like lots of programming
+tasks.
+
+1. What process did you go through to try to solve the puzzle?
+
+2. If you were trying to be systematic in checking that someone else's proposal
+would work on any maze, how would you go about it?
+
+

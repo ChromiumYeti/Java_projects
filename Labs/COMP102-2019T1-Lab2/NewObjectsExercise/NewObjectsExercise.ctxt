@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NewObjectsExercise
+comment0.text=\ The\ NewObjectsExercise\ class\ has\ several\ simple\ methods\n\ that\ involve\ creating\ new\ objects\ and\ calling\ methods\ on\ those\ objects.\n\ -\ growFlowers()\ should\ create\ two\ or\ three\ Flower\ objects\ and\n\ make\ them\ grow\ and\ bloom\n\ -\ blowUpBalloons()\ should\ create\ two\ Balloon\ objects\ and\n\ make\ them\ expand\ and\ pop\n\ -\ driveCars()\ should\ create\ two\ Car\ objects\ and\ make\ them\n\ drive\ towards\ each\ other\ then\ turn\ to\ the\ side\ and\ drive\ some\ more\n
+comment1.params=
+comment1.target=void\ growFlowers()
+comment1.text=Creates\ two\ or\ three\ Flower\ objects\ and\ makes\ them\ grow\ and\ bloom
+comment2.params=
+comment2.target=void\ blowUpBalloons()
+comment2.text=Creates\ two\ Balloon\ objects\ and\ makes\ them\ expand\ and\ pop
+comment3.params=
+comment3.target=void\ driveCars()
+comment3.text=\ \ Creates\ two\ Car\ objects\ and\ makes\ them\t\ drive\ towards\n\ \ each\ other\ then\ turn\ to\ the\ side\ and\ drive\ some\ more.\n
+numComments=4

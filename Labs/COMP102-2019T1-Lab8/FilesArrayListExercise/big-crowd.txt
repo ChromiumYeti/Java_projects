@@ -1,0 +1,14 @@
+bob 548 70
+bob 147 66
+casey 426 303
+alice 97 311
+bob 367 107
+bob 230 221
+alice 311 392
+bob 38 170
+casey 263 59
+alice 28 21
+bob 572 242
+casey 723 48
+casey 456 19
+alice 669 380

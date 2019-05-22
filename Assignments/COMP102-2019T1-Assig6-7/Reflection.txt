@@ -1,0 +1,14 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 6_and_7
+ * Name:
+ * Username:
+ * ID:
+ */
+
+Questions for Reflection.
+=========================
+
+1. Briefly list the features that you implemented in your Chat Client.
+
+2. Describe how you tested your program, and discuss how much confidence
+you have that your testing shows that the program works correctly. 
+

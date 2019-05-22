@@ -1,0 +1,22 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 1
+ * Name: Christopher Yee
+ * Username: YEECHRI2
+ * ID: 300508227
+ */
+
+Questions for Reflection: 
+=========================
+
+Almost certainly, when you wrote your code, you had bugs in it which you had to
+fix. Some of the bugs were probably easy to identify; others probably took more
+time.
+
+1. Characterise the kinds of bugs you had to deal with (eg spelling, punctuation, ...)
+
+One bug that I came across was discovering that printing statements aren't actually able to perform any arithmetic processes, leading me to declare variables for the calculations instead.
+It was also noticed that the comments in the China flag gave an incorrect formula for calculating the width and height.
+
+2. What techniques for fixing the bugs were most effective for you? Can you
+think of better approaches that you could use next time?
+
+At this stage early on where there wasn't too much code written, the trial and error process seemed to work the best in being able to determine the nature of the bug. In relation to tidying up the arithmetic, sometimes I would resort to simple pen and paper to get the better looking solution.

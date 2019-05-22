@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=FilesArrayListExercise
+comment0.text=\ Four\ methods\ that\ use\ ArrayLists\n\ cartoonCrowd(String\ filename)\:\n\ \ \ \ \ \ read\ values\ from\ file,\n\ \ \ \ \ \ create\ an\ ArrayList\ of\ objects,\n\ \ \ \ \ \ call\ methods\ on\ objects\n\ \ Uses\ an\ ArrayList.\ \n\n\ doPlotNumbersCompareToMiddle()\:\n\ doPlotNumbersCompareToNext()\:\n\ \ \ \ \ \ read\ numbers\ from\ file\ into\ an\ ArrayList\ of\ numbers\n\ \ \ \ \ \ then\ access\ values.\n\ \ Uses\ an\ ArrayList.\ \n\n\ doReadAndReverse()\:\n\ \ \ \ \ \ read\ tokens\ from\ file\ into\ an\ ArrayList\ of\ Strings\n\ \ \ \ \ \ then\ access\ values\ in\ reverse\ order\n\ \ Uses\ an\ ArrayList.\ \n\n
+comment1.params=
+comment1.target=void\ doLittleCrowd()
+comment2.params=
+comment2.target=void\ doBigCrowd()
+comment3.params=filename
+comment3.target=void\ cartoonCrowd(java.lang.String)
+comment3.text=\n\ cartoonCrowd\:\n\ Parameter\ is\ the\ name\ of\ a\ file.\n\ \ \ \ Reads\ a\ file\ specifying\ a\ collection\ of\ cartoonCharacters\ \n\ Each\ line\ contains\ a\ string\ and\ an\ x\ and\ y\ value.\n\ Should\ create\ an\ ArrayList\ of\ CartoonCharacters\n\ Using\ a\ while\ loop\ to\ read\ through\ the\ file\n\ it\ should\ repeatedly\n\ \ \ \ \ \ read\ the\ three\ values\ on\ a\ line\n\ \ \ \ \ \ create\ a\ new\ CartoonCharacter\ with\ those\ values\n\ \ \ \ \ \ store\ the\ CartoonCharacter\ in\ the\ next\ place\ in\ the\ array\n\ It\ should\ then,\ in\ turn,\n\ \ \ make\ each\ cartoonCharacter\ look\ left\ and\ frown,\ \n\ \ \ then\ make\ each\ cartoonCharacter\ walk\ forward\ 40\ units\n
+comment4.params=
+comment4.target=void\ doPlotNumbersCompareToMiddle()
+comment4.text=\n\ Reads\ a\ sequence\ of\ numbers\ from\ the\ file\ "numbers.txt"\ into\ an\ ArrayList\n\ Finds\ the\ number\ half\ way\ through\ the\ sequence\ of\ numbers\n\ [if\ the\ size\ of\ the\ list\ is\ n,\ the\ middle\ number\ is\ at\ index\ (n-1)/2\ ]\n\ Then\ plots\ the\ numbers\ as\ a\ sequence\ of\ rectangles\ of\ width\ \=\ 5\ and\n\ height\ \=\ the\ number\ being\ plotted,\n\ The\ color\ is\n\ \ \ \ green\ if\ the\ number\ is\ less\ than\ the\ middle\ number,\n\ \ \ \ black\ if\ it\ is\ equal\ to\ the\ middle\ number,\ \n\ \ \ \ red\ \ \ if\ the\ number\ is\ larger\ than\ the\ middle\ number,\n\ Note\:\ it\ has\ to\ read\ all\ the\ numbers\ before\ it\ can\ plot\ any\ of\ them.\n
+comment5.params=
+comment5.target=void\ doPlotNumbersCompareToNext()
+comment5.text=\n\ Reads\ a\ sequence\ of\ numbers\ from\ the\ file\ "numbers.txt"\ into\ an\ ArrayList\n\ Then\ plots\ the\ numbers\ as\ a\ sequence\ of\ rectangles\ of\ width\ \=\ 5\ and\n\ height\ \=\ the\ number\ being\ plotted,\n\ The\ color\ is\n\ \ \ \ green\ if\ the\ number\ is\ less\ than\ the\ next\ number,\n\ \ \ \ black\ if\ it\ is\ equal\ to\ the\ next\ number,\ \n\ \ \ \ red\ \ if\ the\ number\ is\ larger\ than\ the\ next\ number,\ or\ it\ is\ the\ last\ number.\n\ Note\:\ it\ has\ to\ read\ all\ the\ numbers\ before\ it\ can\ plot\ any\ of\ them.\n
+comment6.params=
+comment6.target=void\ doReadAndReverse()
+comment6.text=\ \n\ Asks\ the\ user\ for\ a\ file,\ and\ reads\ each\ token\ from\ the\ file,\ storing\n\ them\ in\ an\ ArrayList.\n\ \ \ \ \ It\ prints\ out\ the\ number\ of\ tokens\ it\ read\ and\ then\n\ prints\ the\ tokens\ in\ reverse\ order.\n
+comment7.params=
+comment7.target=void\ doShowFile()
+comment7.text=\n\ Utility\ method\ to\ list\ the\ contents\ of\ a\ file.\n
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

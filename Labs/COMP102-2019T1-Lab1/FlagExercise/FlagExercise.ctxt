@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FlagExercise
+comment0.text=\ Draws\ flags\ of\ various\ countries.\n\n\ The\ correct\ dimensions\ of\ the\ official\ flags\ varies\ from\ country\ to\ country.\n\ Many\ flags\ are\ 2/3\ as\ high\ as\ they\ are\ wide.\n\ It\ is\ fine\ on\ the\ flags\ of\ Bangladesh,\ Japan,\ etc\ to\ make\ the\ circles\n\ exactly\ half\ the\ height\ of\ the\ flags.\n\ The\ exact\ colours\ of\ the\ flags\ will\ also\ be\ difficult\ to\ match;\n\ It\ is\ fine\ to\ use\ the\ standard\ colours\:\ red,\ green,\ blue,\ orange.\n\ You\ can\ find\ lots\ of\ details,\ including\ the\ correct\ dimensions\ and\ colours,\ of\ flags\ from\n\ http\://www.crwflags.com/fotw/flags/\ \ \ \ \n\n
+comment1.params=
+comment1.target=void\ drawJapanFlag()
+comment1.text=\ Draw\ a\ flag\ of\ Japan\ at\ (LEFT,TOP)\ with\ the\ specified\ width.\n\ \ The\ flag\ has\ a\ white\ background\ and\ a\ red\ circle\ in\ the\ middle.\n\ \ The\ flag\ is\ 2/3\ as\ high\ as\ it\ is\ wide\ (ratio\ 2\:3).\n\ \ Calculate\ \n\ \ -\ the\ height\ of\ the\ flag\ (2.0/3.0\ of\ the\ width)\n\ \ -\ the\ circle\ diameter\ (3.0/5.0\ of\ the\ height)\n\ \ -\ and\ the\ left\ and\ top\ of\ the\ circle.\n\ \ Then\ draw\ the\ outline\ of\ the\ flag\ and\ the\ circle\n
+comment2.params=
+comment2.target=void\ drawIndonesiaFlag()
+comment2.text=\ Draw\ a\ flag\ of\ Indonesia\ at\ (LEFT,TOP)\ with\ the\ specified\ width.\n\ \ The\ flag\ has\ two\ horizontal\ stripes;\n\ \ the\ top\ is\ red\ and\ the\ bottom\ is\ white.\n\ \ The\ flag\ is\ 2/3\ as\ high\ as\ it\ is\ wide\ (ratio\ 2\:3).\n
+comment3.params=
+comment3.target=void\ drawAustriaFlag()
+comment3.text=\ Draw\ a\ flag\ of\ Austria\ at\ (LEFT,TOP)\ with\ the\ specified\ width.\n\ \ The\ flag\ \ has\ three\ horizontal\ stripes\:\n\ \ the\ top\ and\ bottom\ are\ red\ and\ the\ middle\ is\ white.\n\ \ The\ flag\ is\ 2/3\ as\ high\ as\ it\ is\ wide\ (ratio\ 2\:3).\n
+comment4.params=
+comment4.target=void\ drawBangladeshFlag()
+comment4.text=\ Draw\ a\ flag\ \ of\ Bangladesh\ at\ (LEFT,TOP)\ with\ the\ specified\ width.\n\ \ The\ flag\ has\ a\ green\ background\ and\n\ \ a\ red\ circle\ in\ the\ middle\ (off-set\ to\ the\ left).\n\ \ The\ flag\ is\ 3/5\ as\ high\ as\ it\ is\ wide\ (ratio\ 3\:5).\n
+comment5.params=
+comment5.target=void\ drawNigerFlag()
+comment5.text=\ Draw\ a\ flag\ of\ Niger\ at\ (LEFT,TOP)\ with\ the\ specified\ width.\n\ \ The\ flag\ has\ three\ horizontal\ stripes,\n\ \ orange\ at\ the\ top,\ white\ in\ the\ middle,\ green\ at\ the\ bottom,\n\ \ and\ an\ orange\ circle\ in\ the\ middle\ of\ the\ middle\ stripe.\n\ \ The\ flag\ is\ 6/7\ as\ high\ as\ it\ is\ wide\ (ratio\ 6\:7).\n
+numComments=6

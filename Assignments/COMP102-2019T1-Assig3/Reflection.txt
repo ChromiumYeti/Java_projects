@@ -1,0 +1,25 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 3
+ * Name: Christopher Yee
+ * Username: yeechri2
+ * ID: 300508277
+ */
+
+Questions for Reflection: 
+=========================
+
+1. How did you decide what parameters to give drawThreeStripeFlag and drawPebbleRow?
+If you had more parameters, would it have made the methods more useful or more
+difficult to use? Is there a principle to guide that decision?
+
+For drawThreeStripeFlag, I needed 6 parameters: its starting location with x and y values, whether it was to be horizontal or not, and the three colour choices. These allowed me to make use of only the entered information to construct the flags.
+
+For drawPebbleRow, I chose 4 parameters to help me construct: where to position the row, how many dishes, where the red pebble starts and where the blue pebble starts. I set this up this way for the Challenge, which I wasn't able to complete, to make it easy for the user or the game construct to input and update the numbers, as well as making it easy to run comparisons between the pebble positions.
+
+Additional parameters may have provided more versatility, especially if there are aditional attributes that need to be controlled, such as pebble movement, however for static objects, they didn't need to have much else. 
+
+2. printAverage computed and printed the average, but minimumOfList just
+computed and returned the minimum - it didn't print it out.  Which design is
+better and why?  What are the advantages of making a method do multiple things,
+and what are the advantages of making a method do just one thing?
+
+Use of the return is handy for when you want to get a value back from it and then finish up with the method without needing to go back and do more. If you're wanting to output more values or do many things then it's easier to do it without returning the value. While you can return multiple values, it is not recommended.
