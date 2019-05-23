@@ -2,10 +2,10 @@
 dependency1.from=EarthquakeAnalyser
 dependency1.to=Earthquake
 dependency1.type=UsesDependency
-editor.fx.0.height=1055
-editor.fx.0.width=899
-editor.fx.0.x=999
-editor.fx.0.y=25
+editor.fx.0.height=1044
+editor.fx.0.width=1105
+editor.fx.0.x=819
+editor.fx.0.y=0
 objectbench.height=142
 objectbench.width=768
 package.divider.horizontal=0.6

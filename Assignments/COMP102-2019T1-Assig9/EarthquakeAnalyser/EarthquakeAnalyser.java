@@ -146,8 +146,10 @@ public class EarthquakeAnalyser{
         double pairs = 0;
         for (int i=0; i < this.earthquakes.size(); i++) {
             for (int j=1; j < this.earthquakes.size(); j++) {
-                if(this.earthquake.get(i).distanceTo(j) <=1.0
-                && this.earthquake.get(i).getDepth(i)){
+                if(this.earthquakes.get(i).distanceTo(j) <=1.0
+                && this.earthquakes.get(i).getDepth(i) <=1.0
+                && this.earthquakes.get(j).getDepth(j) <=1.0
+                && this.earthquakes.get(i).timeBetween(j) <= 60*24){
                     
                 }
             }
