@@ -12,7 +12,6 @@ import ecs100.*;
 import java.util.*;
 import java.awt.Color;
 
-
 /**
  *  Lets a player play a simple Solitaire dominoes game.
  *  Dominoes are rectangular tiles with two numbers from 0 to 6 on
@@ -62,8 +61,9 @@ public class DominoGame{
     public static final int NUM_HAND = 6;    // Number of dominos in hand
 
     // Fields: hand, table and selectedPos
-    /*# YOUR CODE HERE */
-    
+    private ArrayList <Domino> table = new ArrayList<Domino>();
+    private Domino[] hand = new Domino[6];
+
     private int selectedPos = 0;      //  selected position in the hand.
 
     // (You shouldn't add any more fields for core or completion)
@@ -84,8 +84,8 @@ public class DominoGame{
      *  set the hand to have no dominos
      */
     public void restart(){
-        /*# YOUR CODE HERE */
-
+        ArrayList <Domino> table = new ArrayList<Domino>();
+        Domino[] hand = new Domino[6];
         this.redraw();
     }
 
@@ -96,7 +96,11 @@ public class DominoGame{
      * (needs to search along the array for an empty position.)
      */
     public void pickup(){
-        /*# YOUR CODE HERE */
+        for(int i = 0; i <this.hand.length; i++){
+            if(this.hand[i] == null) {
+                this.hand[i].draw(DOMINO_SPACING*i+HAND_LEFT, HAND_TOP);
+            }
+        }
 
         this.redraw();
     }
@@ -109,8 +113,12 @@ public class DominoGame{
      *   DOMINO_SPACING, DOMINO_HEIGHT, HAND_LEFT, HAND_TOP
      */
     public void drawHand(){
-        /*# YOUR CODE HERE */
 
+        for(int i = 0; i <this.hand.length; i++){
+            this.hand[i].draw(DOMINO_SPACING*i+HAND_LEFT, HAND_TOP);
+        }
+        UI.setColor(Color.black);
+        UI.drawRect(HAND_LEFT, HAND_TOP, DOMINO_SPACING*this.hand.length,DOMINO_HEIGHT);
     }
 
     /**
@@ -131,7 +139,9 @@ public class DominoGame{
      *   DOMINO_SPACING, DOMINO_HEIGHT, TABLE_LEFT, TABLE_TOP
      */
     public void drawTable(){
-        /*# YOUR CODE HERE */
+        for(int i = 0; i <this.table.size(); i++){
+
+        }
 
     }
 
@@ -140,8 +150,11 @@ public class DominoGame{
      * flip it over.
      */
     public void flipDomino(){
-        /*# YOUR CODE HERE */
-
+        // for(int i = 0; i <this.hand.length; i++){
+            // if(this.selectedPos == i){
+            // this.hand[i].flipNums();
+        // }
+    // }
         this.redraw();
     }
 
@@ -151,7 +164,7 @@ public class DominoGame{
      * and also decrement the selected position to follow the domino 
      */
     public void moveLeft(){
-        /*# YOUR CODE HERE */
+        
 
         this.redraw();
     }
@@ -203,7 +216,16 @@ public class DominoGame{
 
     public static void main(String[] args){
         DominoGame obj = new DominoGame();
-        /*# YOUR CODE HERE */
+        UI.setMouseListener(obj::doMouse);
+
+        UI.addButton("Pick up Domino", obj::pickup);
+        UI.addButton("Place Domino", obj::placeDomino);
+        UI.addButton("Flip Domino", obj::flipDomino);
+        UI.addButton("Move Left", obj::moveLeft);
+        UI.addButton("Move Right", obj::moveRight);
+        UI.addButton("Suggestion", obj::suggestDomino);
+        UI.addButton("Reset Dominos", obj::restart);
+        UI.addButton("Quit", UI::quit);
 
     }   
 }

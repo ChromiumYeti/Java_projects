@@ -96,7 +96,7 @@ public class EarthquakeAnalyser{
             String region = (String) lineSc.next();
             Earthquake quakes = new Earthquake(ID, time, longitude,latitude,magnitude,depth,region);
             this.earthquakes.add(quakes);
-            
+
             //UI.printf("ID: %s\tTime: %s\tLong: %.2f\tLat: %.2f\tMag: %.2f\tDepth: %.2f\tRegion: %s\n",ID,time,longitude,latitude,magnitude,depth,region); 
         }
 
@@ -143,17 +143,26 @@ public class EarthquakeAnalyser{
      */
     public void findPairs(){
         UI.println("Close earthquakes");
-        double pairs = 0;
+        //double pairs = 0;
+
         for (int i=0; i < this.earthquakes.size(); i++) {
-            for (int j=1; j < this.earthquakes.size(); j++) {
-                if(this.earthquakes.get(i).distanceTo(j) <=1.0
-                && this.earthquakes.get(i).getDepth(i) <=1.0
-                && this.earthquakes.get(j).getDepth(j) <=1.0
-                && this.earthquakes.get(i).timeBetween(j) <= 60*24){
-                    
+            for (int j=i+1; j < this.earthquakes.size(); j++) {
+                String ID1 = this.earthquakes.get(i).getID();
+                String ID2 = this.earthquakes.get(j).getID();
+                double distBtwn = this.earthquakes.get(i).distanceTo(this.earthquakes.get(j));
+                double depDiff = Math.abs(earthquakes.get(i).getDepth() - earthquakes.get(j).getDepth());
+                double daysBtwn = Math.abs(earthquakes.get(i).timeBetween(earthquakes.get(j)))/1440;
+                if(this.earthquakes.get(i) != this.earthquakes.get(j)
+                && distBtwn <=1.0 
+                && depDiff <=1.0
+                && daysBtwn <= 24
+                ){
+                    UI.printf("Pair of Earthquakes - ID1 %s and ID2 %s. Distance between: %.1f km. Depth difference: %.1f km. Days betweeen: %.2f\n",
+                        ID1,ID2,distBtwn,depDiff,daysBtwn);
                 }
             }
         }
+        //UI.printf("Loaded %d earthquakes into list\n", this.earthquakes.size());
         UI.println("----------------------------");
     }
 
