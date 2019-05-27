@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=ArrayExercise
+comment0.text=\ Two\ methods\ that\ use\ arrays\r\n\r\n\ doDuckGame()\:\r\n\ \ \ \ \ construct\ array\ of\ objects,\r\n\ \ \ \ \ call\ methods\ on\ them,\r\n\ \ \ \ \ remove\ them\r\n\ \ Uses\ an\ array\ with\ nulls.\r\n\r\n\ doCountScores()\:\r\n\ \ \ \ \ read\ integers\ from\ file\ and\ construct\ an\ array\ of\ counts\r\n\ \ Uses\ an\ array\ of\ counts.\r\n
+comment1.params=
+comment1.target=void\ doDuckGame()
+comment1.text=\r\n\ Simple\ duck\ shooting\ game\r\n\ \ Uses\ the\ Duck\ class,\ which\ has\ a\ constructor\ and\ two\ methods\:\r\n\ \ \ -\ To\ construct\ a\ duck,\ specify\ its\ horizontal\ position\:\ eg\ new\ Duck(100);\r\n\ \ \ -\ jiggle()\ makes\ the\ duck\ jump\ up\ and\ down\ a\ few\ times\r\n\ \ \ -\ shoot()\ turns\ it\ upside\ down.\ You\ can't\ jiggle\ a\ duck\ after\ you\ have\ shot\ it.\r\n\ \r\n\ The\ doDuckGame\ method\ should\r\n\ -\ Construct\ an\ array\ to\ hold\ 5\ Ducks,\r\n\ -\ Fill\ the\ array\ with\ Ducks\ placed\ across\ the\ screen\ (at\ 200,\ 300,\ 400,\ 500,\ 600)\r\n\ \ \ \ \ \ \ The\ Duck\ constructor\ has\ one\ parameter\ -\ the\ position\ of\ the\ duck.\r\n\ \ \ \ \ \ \ the\ position\ of\ the\ i'th\ duck\ should\ be\ 200+(i*100)\r\n\ -\ Have\ a\ loop\ that\ repeats\ 5\ times\:\r\n\ \ \ -\ Ask\ the\ user\ for\ the\ number\ of\ a\ duck\ to\ shoot\ (0\ to\ 4)\r\n\ \ \ -\ IF\ the\ answer\ is\ valid\ and\ that\ element\ of\ the\ array\ contains\ a\ duck,\ THEN\r\n\ \ \ \ \ \ shoot\ the\ duck\ (call\ the\ shoot\ method\ on\ the\ duck),\ \r\n\ \ \ \ \ \ remove\ it\ from\ the\ array\ (put\ null\ in\ the\ array\ element)\r\n\ \ \ \ \ ELSE\r\n\ \ \ \ \ \ tell\ the\ user\ they\ missed\r\n\ \ \ -\ jiggle\ all\ the\ remaining\ ducks\ (each\ array\ element\ that\ isn't\ null)\r\n
+comment2.params=
+comment2.target=void\ doCountScores()
+comment2.text=\r\n\ Reads\ and\ counts\ a\ sequence\ of\ scores\ from\ a\ file.\r\n\ The\ scores\ are\ all\ numbers\ between\ 1\ and\ 10,\ inclusive.\r\n\ The\ method\ keeps\ a\ count\ for\ each\ score\ in\ an\ array\:\r\n\ \ count[n]\ has\ the\ count\ of\ the\ number\ of\ n's.\r\n\ \ When\ it\ reads\ a\ score,\ it\ increments\ that\ count\ for\ that\ score\r\n\ At\ the\ end,\ it\ prints\ the\ counts\ for\ each\ score.\r\n
+comment3.params=fname
+comment3.target=java.util.ArrayList\ readAllNumbers(java.lang.String)
+comment3.text=\r\n\ Utility\ method\:\ \r\n\ Reads\ a\ file\ consisting\ of\ numbers\ into\ a\ list\ of\ numbers.\r\n\ Returns\ the\ list\ of\ numbers\r\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

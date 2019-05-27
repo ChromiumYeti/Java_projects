@@ -98,8 +98,8 @@ public class Earthquake{
             " at " + DATE_FORMATTER.format(this.time) +
             " mag:" + this.magnitude +
             " depth:" + this.depth +
-            "at (" + this.longitude +","+ this.latitude +") " +
-            "in " + this.region);
+            " at (" + this.longitude +","+ this.latitude +") " +
+            " in " + this.region);
     }
 
 }

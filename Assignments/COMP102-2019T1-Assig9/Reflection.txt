@@ -1,7 +1,7 @@
 /* Reflection.txt for COMP102 - 2019T1, Assignment 9
- * Name:
- * Username:
- * ID:
+ * Name: Christopher Yee
+ * Username: yeechri2
+ * ID: 300508277
  */
 
 Questions for Reflection: 
@@ -11,8 +11,11 @@ Questions for Reflection:
 1. Explain why "off-by-one" errors are so easy to make when programming with
 arrays.
 
+Off-by-one errors occur when instances of using "<=" instead of "<" for comparing things or when the sequence starts at 0 instead of 1, typically found in iterative loops. Minor errors can result in the ranges in iterative loops falling just outside or falling short of the expected.
+
 2. Both DominoGame and EarthquakeAnalyser used another class that was written
 for you. This saved you writing some code, but also constrained you to write
 the program in a particular way. Discuss advantages and disadvantages you found
 when having a predefined class that you had to use as part of your program.
 
+Advantages of predefined classes developed in this way is that you can have a better orgnisation of your methods in the form of a constructor to make instances of objects. This makes it easier to call up the objects when you need to and provide and overall cleaner code structure. A couple of disadvantages is that there aren't easy ways to return values if needed and perhaps efficiency concerns if the objects are more complex.s

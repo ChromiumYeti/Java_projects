@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Duck
+comment0.text=\ A\ Duck\ object\ is\ an\ image\ of\ a\ yellow\ duck,\ displayed\ on\ the\ screen\r\n\ with\ two\ methods\:\r\n\ \ \ jiggle,\ \ which\ moves\ the\ duck\ up\ and\ down\ a\ few\ times\r\n\ \ \ shoot,\ \ which\ makes\ the\ duck\ fall\ over.\r\n\ it\ is\ an\ error\ to\ make\ the\ duck\ jiggle\ after\ it\ has\ fallen\ over\r\n\ The\ duck\ always\ redraws\ itself.\r\n
+comment1.params=x
+comment1.target=Duck(double)
+comment1.text=\r\n\ Constructor\ requires\ the\ coordinates\ (x,\ y)\ of\ where\ it\ should\ be\ placed\r\n
+comment2.params=
+comment2.target=void\ jiggle()
+comment2.text=\r\n\ Makes\ the\ Duck\ shuffle\ to\ the\ left,\ unless\ it\ has\ already\ been\ shot\r\n
+comment3.params=
+comment3.target=void\ shoot()
+comment3.text=\r\n\ shoots\ the\ Duck,\ unless\ it\ has\ already\ been\ shot\r\n
+comment4.params=
+comment4.target=void\ draw()
+comment5.params=
+comment5.target=void\ erase()
+numComments=6
