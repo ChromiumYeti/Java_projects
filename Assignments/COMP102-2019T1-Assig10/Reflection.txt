@@ -1,0 +1,22 @@
+/* Reflection.txt for COMP102 - 2019T1, Assignment 10
+ * Name:
+ * Username:
+ * ID:
+ */
+
+Questions for Reflection: 
+=========================
+
+
+1. Some of the methods in the ImageProcessor program could be done in two
+different ways: "in-place" (only using the array containing the image), or
+using a temporary array to store the image as it was being processed. Discuss
+the advantages and disadvantages of the two approaches. 
+
+2.This was the last assignment.  Think back to the beginning of the
+course and what you knew at that point, and then list some of the new skills
+and understanding that you believe that you have gained during this course.
+
+[For some of you who are still finding the course difficult, you could
+try doing some of the early assignments again; you may find them an awful lot
+easier the second time round, demonstrating that you have learned stuff!]
