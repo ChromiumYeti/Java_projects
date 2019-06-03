@@ -45,33 +45,28 @@ public class ImageProcessor{
     private int selectedCol = 0;
 
     private final int pixelSize = 1;  // the size of the pixels as drawn on screen
-    
-    private int rows = this.image.length;
-    private int cols = this.image[0].length;
 
     /** CORE:
      * Make all pixels in the image darker by 20 greylevels.
      * but make sure that you never go below 0
      */
     public void darkenImage(){
-        UI.clearGraphics();
-        UI.setImmediateRepaint(false);
+        //int rows = this.image.length;
+        //int cols = this.image[0].length;
         for(int row=0; row<this.image.length; row++){
-            int y = row * this.pixelSize;
+            //int y = row * this.pixelSize;
             for(int col=0; col<this.image[0].length; col++){
-                int x = col * this.pixelSize;
-                int darkenValue = this.image[row][col];
-                if (darkenValue >= 0) {
-                    Color dc = new Color(darkenValue, darkenValue, darkenValue);
-                    UI.setColor(dc);
-                    UI.fillRect(x, y, this.pixelSize, this.pixelSize);
+                ///int x = col * this.pixelSize;
+                if (this.image[row][col] > 0) {
+                    this.image[row][col] = (this.image[row][col])-20;
+                    if (this.image[row][col] < 0) {
+                        this.image[row][col] = 0;
+                    }
+
                 }
 
-                
             }
         }
-
-        UI.repaintGraphics();
 
         this.redisplayImage();
     }  
@@ -85,13 +80,24 @@ public class ImageProcessor{
      * But make sure that you never go above 255 or below 0.
      */
     public void contrastImage(){
-        /*# YOUR CODE HERE */
-        for(int row=0; row<this.image.length; row++){
-            int y = row * this.pixelSize;
-            for(int col=0; col<this.image[0].length; col++){
-                int x = col * this.pixelSize;
-                UI.setColor(this.greyColor(this.image[row][col]));
-                UI.fillRect(x, y, this.pixelSize, this.pixelSize);
+        int rows = this.image.length;
+        int cols = this.image[0].length;
+        for(int row=0; row<rows; row++){
+
+            for(int col=0; col<cols; col++){
+
+                if (this.image[row][col] > 128) {
+                    this.image[row][col] = this.image[row][col]+((this.image[row][col])-128)/5;
+                    if(this.image[row][col] > 255){
+                        this.image[row][col] = 255;
+                    }
+                }
+                else if(this.image[row][col] < 128){
+                    this.image[row][col] = this.image[row][col]-(128-(this.image[row][col]))/5;
+                    if(this.image[row][col] < 0){
+                        this.image[row][col] = 0;
+                    }
+                }
             }
         }
         this.redisplayImage();
@@ -103,15 +109,17 @@ public class ImageProcessor{
      *   with the corresponding values on the right half
      */
     public void flipImageHorizontally(){
-        /*# YOUR CODE HERE */
         // see flipping chessboard example
-        for(int row=0; row<this.image.length; row++){
-            int y = row * this.pixelSize;
-            for(int col=0; col<this.image[0].length; col++){
-                int x = col * this.pixelSize;
-                
-                UI.setColor(this.greyColor(this.image[row][col]));
-                UI.fillRect(x, y, this.pixelSize, this.pixelSize);
+        int rows = this.image.length;
+        int cols = this.image[0].length;
+        for(int row=0; row<rows; row++){
+
+            for(int col=0; col<cols/2; col++){
+
+                int tempH = image[row][col];
+                image[row][col] = image[row][cols-col-1];
+                image[row][cols-col-1] = tempH;
+
             }
         }
         this.redisplayImage();
@@ -123,19 +131,17 @@ public class ImageProcessor{
      *   with the corresponding values on the bottom half
      */
     public void flipImageVertically(){
-        /*# YOUR CODE HERE */
         // see flipping chessboard example
-        UI.clearGraphics();
-        UI.setImmediateRepaint(false);
+        int rows = this.image.length;
+        int cols = this.image[0].length;
         for(int row=0; row<rows/2; row++){
-            //int y = row * this.pixelSize;
+
             for(int col=0; col<cols; col++){
-        //        int x = col * this.pixelSize;
-        //        UI.setColor(this.greyColor(this.image[row][col]));
-        //        UI.fillRect(x, y, this.pixelSize, this.pixelSize);
-        int temp = image[row][col];
-        image[row][col] = image[rows-row-1][col];
-        image[rows-row-1][col] = temp;
+
+                int tempV = image[row][col];
+                image[row][col] = image[rows-row-1][col];
+                image[rows-row-1][col] = tempV;
+
             }
         }
 
@@ -151,8 +157,24 @@ public class ImageProcessor{
      *   and then assign the new array to the image field.
      */
     public void rotateImage180(){
-        /*# YOUR CODE HERE */
         //see rotating chessboard example
+        int rows = this.image.length;
+        int cols = this.image[0].length;
+        int[][] tempR180 = new int[rows][cols];//initialise temporary array
+        for(int row=0; row<rows; row++){
+            for(int col=0; col<cols; col++){
+                tempR180[row][col] = image[row][col];
+            }
+        }
+        for(int row=0; row<rows; row++){
+
+            for(int col=0; col<cols; col++){
+
+                int srow = rows-row-1;
+                int scol = cols-col-1;    
+                image[row][col]=tempR180[srow][scol];
+            }
+        }
         this.redisplayImage();
     }
 
@@ -167,7 +189,35 @@ public class ImageProcessor{
      */
     public void rotateImage90(){
         /*# YOUR CODE HERE */
-        //see rotating chessboard example
+        //see rotating chessboard example.
+        //Could not get this to work properly with non square images
+        int rows = this.image.length;
+        int cols = this.image[0].length;
+        if (rows>cols) {
+            cols=rows;
+
+        }
+        else {
+            rows=cols;    
+        }
+        //if (this.image.length!=rows || this.image[0].length!=cols) {return null;}
+
+        int[][] tempR90 = new int[rows][cols];//initialise temporary array
+        for(int row=0; row<rows; row++){
+            for(int col=0; col<cols; col++){
+                tempR90[row][col] = this.image[row][col];
+            }
+        }
+
+        for(int row=0; row<rows; row++){
+            for(int col=0; col<cols; col++){
+
+                int srow = col;
+                int scol = rows-row-1;    
+                this.image[row][col]=tempR90[srow][scol];
+            }
+        }
+
         this.redisplayImage();
     }
 
@@ -179,7 +229,6 @@ public class ImageProcessor{
      * Hint: It is actually easier to work backwards from the bottom right corner.
      */
     public void expandImage(){
-        /*# YOUR CODE HERE */
 
         this.redisplayImage();
     }
@@ -197,7 +246,14 @@ public class ImageProcessor{
         int rows = Math.min(this.image.length, other.length);       // rows and cols
         int cols = Math.min(this.image[0].length, other[0].length); // common to both
         //only change image in region 0..rows-1, 0..cols-1
-        /*# YOUR CODE HERE */
+        //if (other.length!=rows || other[0].length!=cols) { return null;}
+
+        //doesn't work properly for merging with bigger images from an initial smaller image
+        for (int row=0; row<rows; row++){
+            for (int col=0; col<cols; col++){
+                this.image[row][col] = (this.image[row][col] + other[row][col])/2;
+            }
+        }
 
         this.redisplayImage();
     }
